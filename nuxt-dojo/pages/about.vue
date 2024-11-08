@@ -11,10 +11,14 @@
       provident ratione facere quas totam cumque ducimus! Culpa voluptates quaerat ratione
       officiis nesciunt mollitia odio voluptatum quibusdam officia.
     </p>
+    <div>{{ data }}</div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  const { data } = await useFetch('/api/ninja')
+
+</script>
 
 <style scoped>
 h2 {
