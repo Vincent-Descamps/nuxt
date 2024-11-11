@@ -15,5 +15,8 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Icons' }
       ]
     }
+  },
+  runtimeConfig: {
+    currencyKey: process.env.CURRENCY_API_KEY
   }
 })
